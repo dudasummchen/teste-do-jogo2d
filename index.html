@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personagem</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <canvas id="desenho1" width="1000" height="500" style="border: 1px solid #000;">
+     <h3>Seu browser não possui canvas</h3>
+     </canvas>
+     <br/>
+
+     <script type="text/javascript">
+        let canvas=document.getElementById("desenho1")
+        let ctx=canvas.getContext('2d')
+
+        //jogador
+        const jogadorDados={
+            vidas:3,
+            energia:100,
+            
+            numeroSprite:0,
+            linhaSprite: 0,
+            posy:0,
+            velocidade:5,
+            img:"jogador.png", //por a imagme aqui no vs
+            spritesPorLinha:4,
+            largura:200,
+            altura:270,
+            largurafinal:70,
+            alturafinal:100,
+            dirx:0,
+            diry:0,
+            esquerda:false,
+            direita:false,
+            cima:false,
+            baixo:false,
+            andando:false,
+            atrazoSprite:5,
+            maxAtrazoSprite:5,
+            jogadorImg:new Image(),
+        }
+
+     </script>
+    <script src="script.js"></script>
+</body>
+</html>
